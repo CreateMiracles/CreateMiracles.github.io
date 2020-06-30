@@ -42,7 +42,7 @@
   {%- endif %}
 </div>
 
-{%- if theme.footer.powered %}
+<!-- {%- if theme.footer.powered %}
   <div class="powered-by">
     {%- set next_site = 'https://theme-next.org' %}
     {%- if theme.scheme !== 'Gemini' %}
@@ -58,4 +58,4 @@
   </div>
 {%- endif %}
 
-{{- next_inject('footer') }}
+{{- next_inject('footer') }} -->

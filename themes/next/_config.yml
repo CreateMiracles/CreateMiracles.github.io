@@ -86,7 +86,7 @@ footer:
 # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
-  license: by-nc-sa
+  license: 
   sidebar: false
   post: false
   language:
@@ -356,10 +356,11 @@ codeblock:
   # See: https://github.com/chriskempson/tomorrow-theme
   highlight_theme: normal
   # Add copy button on codeblock
+  border_radius: 8
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
     style:
 
@@ -368,7 +369,7 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -854,9 +855,9 @@ pace:
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
   enable: false
-  three_waves: true
+  three_waves: false
   canvas_lines: false
-  canvas_sphere: false
+  canvas_sphere: true
 
 # Canvas-ribbon
 # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
@@ -984,7 +985,7 @@ vendors:
   # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
   three:
   three_waves:
-  canvas_lines:
+  canvas_lines: true
   canvas_sphere:
 
   # Internal version: 1.0.0
