@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="hexo一键发布文章一、存在问题目前我们在windows系统中使用hexo发布文章的时候需要在指定的文件夹下，然后使用以下两条命令来发布文章，这样就使得每次的部署都非常的麻烦。 12hexo cleanhexo g -d   注意：这里的hexo g -d和hexo d -g是等价的。  二、解决方案​    这里我们可以直接使用git alias来设置一条语句执行多条命令，打开git bash，">
+  <meta name="description" content="一、存在问题目前我们在windows系统中使用hexo发布文章的时候需要在指定的文件夹下，然后使用以下两条命令来发布文章，这样就使得每次的部署都非常的麻烦。 12hexo cleanhexo g -d   注意：这里的hexo g -d和hexo d -g是等价的。  二、解决方案​    这里我们可以直接使用git alias来设置一条语句执行多条命令，打开git bash，然后输入以下命令：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用git命令一键发布文章">
 <meta property="og:url" content="http://yoursite.com/2020/06/30/hexo/index.html">
 <meta property="og:site_name" content="Chen_Crystal">
-<meta property="og:description" content="hexo一键发布文章一、存在问题目前我们在windows系统中使用hexo发布文章的时候需要在指定的文件夹下，然后使用以下两条命令来发布文章，这样就使得每次的部署都非常的麻烦。 12hexo cleanhexo g -d   注意：这里的hexo g -d和hexo d -g是等价的。  二、解决方案​    这里我们可以直接使用git alias来设置一条语句执行多条命令，打开git bash，">
+<meta property="og:description" content="一、存在问题目前我们在windows系统中使用hexo发布文章的时候需要在指定的文件夹下，然后使用以下两条命令来发布文章，这样就使得每次的部署都非常的麻烦。 12hexo cleanhexo g -d   注意：这里的hexo g -d和hexo d -g是等价的。  二、解决方案​    这里我们可以直接使用git alias来设置一条语句执行多条命令，打开git bash，然后输入以下命令：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-06-30T02:49:30.000Z">
-<meta property="article:modified_time" content="2020-06-30T03:17:39.304Z">
+<meta property="article:modified_time" content="2020-06-30T03:21:58.430Z">
 <meta property="article:author" content="Chenzhikang">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -190,7 +190,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-30 10:49:30 / 修改时间：11:17:39" itemprop="dateCreated datePublished" datetime="2020-06-30T10:49:30+08:00">2020-06-30</time>
+              <time title="创建时间：2020-06-30 10:49:30 / 修改时间：11:21:58" itemprop="dateCreated datePublished" datetime="2020-06-30T10:49:30+08:00">2020-06-30</time>
             </span>
 
           
@@ -204,7 +204,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="hexo一键发布文章"><a href="#hexo一键发布文章" class="headerlink" title="hexo一键发布文章"></a>hexo一键发布文章</h1><h3 id="一、存在问题"><a href="#一、存在问题" class="headerlink" title="一、存在问题"></a>一、存在问题</h3><p>目前我们在windows系统中使用hexo发布文章的时候需要在指定的文件夹下，然后使用以下两条命令来发布文章，这样就使得每次的部署都非常的麻烦。</p>
+        <h3 id="一、存在问题"><a href="#一、存在问题" class="headerlink" title="一、存在问题"></a>一、存在问题</h3><p>目前我们在windows系统中使用hexo发布文章的时候需要在指定的文件夹下，然后使用以下两条命令来发布文章，这样就使得每次的部署都非常的麻烦。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
 <blockquote>
@@ -218,7 +218,7 @@
 </blockquote>
 <p>​    设置完成后，只需要执行<code>git bloggo</code>就可以完成一键更新博客了</p>
 <h2 id="三、如何取消别名"><a href="#三、如何取消别名" class="headerlink" title="三、如何取消别名"></a>三、如何取消别名</h2><p>​    执行以下命令取消别名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset alias.fuck</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset alias.bloggo</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -293,7 +293,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo一键发布文章"><span class="nav-number">1.</span> <span class="nav-text">hexo一键发布文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、存在问题"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、存在问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、解决方案"><span class="nav-number">1.1.</span> <span class="nav-text">二、解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、如何取消别名"><span class="nav-number">1.2.</span> <span class="nav-text">三、如何取消别名</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、存在问题"><span class="nav-number">1.</span> <span class="nav-text">一、存在问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、解决方案"><span class="nav-number"></span> <span class="nav-text">二、解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、如何取消别名"><span class="nav-number"></span> <span class="nav-text">三、如何取消别名</span></a></div>
       </div>
       <!--/noindex-->
 
